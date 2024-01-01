@@ -54,7 +54,7 @@ jobs:
 
           ls -l $GITHUB_WORKSPACE/
 
-          az deployment group create --resource-group ${{ env.RESOURCE_GROUP_NAME }} --template-file '$GITHUB_WORKSPACE/Azure/main.bicep' --debug
+          az deployment group create --resource-group ${{ env.RESOURCE_GROUP_NAME }} --template-file 'Azure/main.bicep' --debug
 
   build:
     runs-on: ubuntu-latest
